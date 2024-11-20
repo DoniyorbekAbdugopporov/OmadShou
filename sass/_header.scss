@@ -1,0 +1,38 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .input {
+      width: 300px;
+      height: 40px;
+      border: 1px solid #2222;
+      border-radius: 6px;
+    }
+  }
+  .icon__btn {
+    background: none;
+    cursor: pointer;
+  }
+  .icon__btn i {
+    font-size: 32px;
+  }
+}
+
+.header.dark {
+  background: #222;
+  color: #fff;
+  i {
+    color: #fff;
+  }
+}

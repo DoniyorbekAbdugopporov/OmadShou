@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omad Shou</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+      integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container">
+        <nav class="navbar">
+          <button class="btn" onclick="getAllNumbers()">Get Numbers</button>
+          <input
+            class="input"
+            id="phoneInput"
+            type="tel"
+            placeholder="Enter Phone number"
+          />
+          <button class="btn" onclick="addPhoneNumber()">Add Number</button>
+          <button class="icon__btn" onclick="addDarkMode()">
+            <i class="fa-regular fa-moon"></i>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main class="main" id="main">
+      <!-- Modal -->
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2>All Phone Numbers</h2>
+          <ul id="phoneList"></ul>
+        </div>
+      </div>
+      <h1 class="title">+998 00 000 00 00</h1>
+      <button class="btn" onclick="randomTel()">Start</button>
+    </main>
+
+    <audio
+      class="audio"
+      src="./assets/music/sport-rock-trailer_medium-3-177561.mp3"
+    ></audio>
+
+    <script src="./js/app.js" defer></script>
+  </body>
+</html>
